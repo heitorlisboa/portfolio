@@ -1,0 +1,18 @@
+.apresentacao__social {
+
+}
+
+.apresentacao__social--item {
+    
+}
+
+#discord-click:hover {
+    cursor: pointer;
+}
+
+#discord-tag {
+    position: absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+}

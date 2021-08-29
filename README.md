@@ -1,4 +1,9 @@
 # Projeto de site
 Projeto de site hospedado no GitHub Pages.
-- [ ] Criar `index.html` (página de índice)
-- [ ] Criar `style.css` (estilo geral do site)
+- [x] Iniciar a construção da página de índice
+- [x] Criar organização dos arquivos estáticos
+- [ ] Terminar de escrever o conteúdo no HTML
+- [ ] Preparar imagens que serão utilizadas no website
+- [ ] Fazer a estilização do cabeçalho
+- [ ] Fazer a estilização da seção 'Sobre mim'
+- [ ] Fazer a estilização da seção 'Habilidades'
