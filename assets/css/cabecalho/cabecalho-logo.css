@@ -1,0 +1,5 @@
+.cabecalho__logo {
+    --tamanho-logo: 150px;
+    width: var(--tamanho-logo);
+    height: calc(var(--tamanho-logo)/3);
+}

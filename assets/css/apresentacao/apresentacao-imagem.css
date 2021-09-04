@@ -1,0 +1,12 @@
+.apresentacao__imagem {
+    background-image: url('../../img/apresentacao/foto-perfil.png');
+    background-position: center;
+    background-size: cover;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 25px -10px rgba(0, 0, 0, .5);
+}

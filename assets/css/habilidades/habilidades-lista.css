@@ -1,0 +1,6 @@
+.habilidades__lista {
+    display: flex;
+    flex-flow: row wrap;
+    
+    align-self: center;
+}

@@ -1,7 +1,27 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+    --bg-cinza-claro: rgb(236, 236, 236);
+    
+    --fonte-titulo: 'Nothing You Could Do', cursive;
+    --fonte-geral: 'Ubuntu', Arial, Helvetica, sans-serif;
+
+    font: 16px var(--fonte-geral);
 }
 
 .container {
     padding: 2rem 6%;
+}
+
+.titulo {
+    font: 1.75rem var(--fonte-titulo);
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc(50vw - 400px);
+        padding-right: calc(50vw - 400px);
+    }
 }

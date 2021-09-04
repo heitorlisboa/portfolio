@@ -4,6 +4,6 @@ Projeto de site hospedado no GitHub Pages.
 - [x] Criar organização dos arquivos estáticos
 - [ ] Terminar de escrever o conteúdo no HTML
 - [ ] Preparar imagens que serão utilizadas no website
-- [ ] Fazer a estilização do cabeçalho
-- [ ] Fazer a estilização da seção 'Sobre mim'
-- [ ] Fazer a estilização da seção 'Habilidades'
+- [x] Fazer a estilização do cabeçalho
+- [x] Fazer a estilização da seção 'Sobre mim'
+- [x] Fazer a estilização da seção 'Habilidades'
