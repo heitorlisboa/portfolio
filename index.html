@@ -21,8 +21,10 @@
   <link rel="stylesheet" href="./assets/css/habilidades/habilidades-titulo.css">
   <link rel="stylesheet" href="./assets/css/habilidades/habilidades-descricao.css">
   <link rel="stylesheet" href="./assets/css/habilidades/habilidades-lista.css">
-  <link rel="stylesheet" href="./assets/css/habilidades/habilidade/habilidade.css">
-  <link rel="stylesheet" href="./assets/css/habilidades/habilidade/habilidade-imagem.css">
+  <link rel="stylesheet" href="./assets/css/planos/planos.css">
+  <link rel="stylesheet" href="./assets/css/planos/planos-titulo.css">
+  <link rel="stylesheet" href="./assets/css/planos/planos-descricao.css">
+  <link rel="stylesheet" href="./assets/css/planos/planos-lista.css">
 
   <title>Portfólio Heitor Lisboa</title>
 </head>
@@ -32,11 +34,11 @@
     <a href="#"><img class="cabecalho__logo" src="./assets/img/cabecalho/logo.png" alt="Logo do website"></a>
     <nav class="menu">
       <ul class="menu__lista">
-        <li class="menu__item"><a href="#sobre-mim">Sobre mim</a></li>
-        <li class="menu__item"><a href="#redes-sociais">Redes sociais</a></li>
-        <li class="menu__item"><a href="#habilidades">Habilidades</a></li>
-        <li class="menu__item"><a href="#planos">Planos</a></li>
-        <li class="menu__item"><a href="#projetos">Projetos</a></li>
+        <li class="menu__lista--item"><a href="#sobre-mim">Sobre mim</a></li>
+        <li class="menu__lista--item"><a href="#redes-sociais">Redes sociais</a></li>
+        <li class="menu__lista--item"><a href="#habilidades">Habilidades</a></li>
+        <li class="menu__lista--item"><a href="#planos">Planos</a></li>
+        <li class="menu__lista--item"><a href="#projetos">Projetos</a></li>
       </ul>
     </nav>
   </header>
@@ -45,37 +47,51 @@
     <section class="apresentacao container" id="sobre-mim">
       <div class="apresentacao__imagem"></div>
       <h1 class="apresentacao__titulo titulo">Heitor Lisboa Colares Novais</h1>
-      <p class="apresentacao__descricao texto">
+      <p class="apresentacao__descricao">
         Sou um estudante de programação muito entusiasmado, curioso e que adora sair criando qualquer projeto que der na telha. Além de, obviamente, programação, tenho interesse em música e jogos.
       </p>
       <ul class="apresentacao__social" id="redes-sociais">
-        <li class="apresentacao__social--item"><a href="https://www.youtube.com/channel/UC0oC2ZbBdbNa-wqgeFIWg8g" title="Meu canal no Youtube"><img src="" alt="Logo do Youtube"></a></li>
-        <li class="apresentacao__social--item"><a href="https://github.com/heitorlisboa" title="Meu perfil no GitHub"><img src="" alt="Logo do GitHub"></a></li>
-        <li class="apresentacao__social--item"><img src="" alt="Discord: Heitor#7447"></div></li>
-        <li class="apresentacao__social--item"><a href="https://myanimelist.net/profile/AnchorDz" title="Meu perfil no MyAnimeList"><img src="" alt="Logo do MyAnimeList"></a></li>
+        <li class="apresentacao__social--item"><a href="https://www.youtube.com/channel/UC0oC2ZbBdbNa-wqgeFIWg8g" title="Meu canal no Youtube"><img src="./assets/img/apresentacao/youtube-logo.png" alt="Logo do Youtube"></a></li>
+        <li class="apresentacao__social--item"><a href="https://github.com/heitorlisboa" title="Meu perfil no GitHub"><img src="./assets/img/apresentacao/github-logo.png" alt="Logo do GitHub"></a></li>
+        <li class="apresentacao__social--item"><a href="https://myanimelist.net/profile/AnchorDz" title="Meu perfil no MyAnimeList"><img src="./assets/img/apresentacao/mal-logo.png" alt="Logo do MyAnimeList"></a></li>
+        <li class="apresentacao__social--item"><img src="./assets/img/apresentacao/meu-discord.png" alt="Discord: Heitor#7447"></div></li>
       </ul>
     </section>
 
     <section class="habilidades container" id="habilidades">
       <h2 class="habilidades__titulo titulo">Habilidades</h2>
-      <p class="habilidades__descricao texto">
+      <p class="habilidades__descricao">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, facilis harum fuga sequi officia perferendis. Obcaecati accusantium possimus quos, iusto dicta optio. Quibusdam recusandae cum assumenda perferendis maxime architecto velit?
       </p>
       <ul class="habilidades__lista">
-        <li class="habilidade"><img class="habilidade__imagem" src="" alt="Logo do Python"></li>
-        <li class="habilidade"><img class="habilidade__imagem" src="" alt="Logo do Django"></li>
-        <li class="habilidade"><img class="habilidade__imagem" src="" alt="Logo do HTML"></li>
-        <li class="habilidade"><img class="habilidade__imagem" src="" alt="Logo do CSS"></li>
-        <li class="habilidade"><img class="habilidade__imagem" src="" alt="Logo do JavaScript"></li>
+        <li class="habilidades__lista--item"><img class="habilidades__lista--imagem" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="Logo do Python"></li>
+        <li class="habilidades__lista--item"><img class="habilidades__lista--imagem" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" alt="Logo do Django"></li>
+        <li class="habilidades__lista--item"><img class="habilidades__lista--imagem" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="Logo do HTML"></li>
+        <li class="habilidades__lista--item"><img class="habilidades__lista--imagem" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="Logo do CSS"></li>
+        <li class="habilidades__lista--item"><img class="habilidades__lista--imagem" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="Logo do JavaScript"></li>
       </ul>
     </section>
 
-    <section class="planos">
-
+    <section class="planos container">
+      <h2 class="planos__titulo titulo">Planos</h2>
+      <p class="planos__descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam itaque deserunt, harum atque soluta corrupti laudantium quam neque! Aliquid perspiciatis molestias, magni aliquam cumque ad rem sed exercitationem sequi id?</p>
+      <ul class="planos__lista">
+        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="Logo do Sass" class="planos__lista--imagem"></li>
+        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Logo do NodeJS" class="planos__lista--imagem"></li>
+        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="Logo do TypeScript" class="planos__lista--imagem"></li>
+        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="Logo do React" class="planos__lista--imagem"></li>
+        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Logo do Linux" class="planos__lista--imagem"></li>
+        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="Logo do C Sharp" class="planos__lista--imagem"></li>
+        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="Logo do dot NET" class="planos__lista--imagem"></li>
+      </ul>
     </section>
 
-    <section class="projetos">
-
+    <section class="projetos container">
+      <h2 class="projetos__titulo titulo">Projetos</h2>
+      <p class="projetos__descricao"></p>
+      <ul class="projetos__lista">
+        <li class="projetos__lista--item"><a href="#"></a></li>
+      </ul>
     </section>
   </main>
 
