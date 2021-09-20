@@ -24,8 +24,15 @@
 .plans__item, .introduction__social-item, .abilities__item {
   margin: 0 0.5rem;
 }
-.plans__item img, .introduction__social-item img, .abilities__item img {
-  height: 60px;
+@media screen and (min-width: 0px) {
+  .plans__item img, .introduction__social-item img, .abilities__item img {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .plans__item img, .introduction__social-item img, .abilities__item img {
+    height: 60px;
+  }
 }
 
 .projects__description, .plans__description, .introduction__description, .abilities__description {
@@ -64,7 +71,7 @@
   color: white;
 }
 
-@media screen and (min-width: 0) {
+@media screen and (min-width: 0px) {
   .header {
     flex-flow: column;
   }
