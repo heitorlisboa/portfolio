@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.projects, .plans, .introduction, .abilities {
+  padding: 2rem 6%;
+}
+@media screen and (min-width: 1024px) {
+  .projects, .plans, .introduction, .abilities {
+    padding-left: calc(50vw - 400px);
+    padding-right: calc(50vw - 400px);
+  }
+}
+
+.projects, .plans, .introduction, .abilities {
+  display: flex;
+  flex-flow: column;
+}
+
+.plans__list, .introduction__socials-list, .abilities__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.plans__item, .introduction__social-item, .abilities__item {
+  margin: 0 0.5rem;
+}
+.plans__item img, .introduction__social-item img, .abilities__item img {
+  height: 60px;
+}
+
+.projects__description, .plans__description, .introduction__description, .abilities__description {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.projects__title, .plans__title, .introduction__title, .abilities__title {
+  font: 1.75em "Nothing You Could Do", cursive;
+  margin-bottom: 1rem;
+}
+
+.abilities__list {
+  align-self: center;
+}
+.header {
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+.header__logo {
+  aspect-ratio: 3/1;
+  width: 150px;
+}
+
+.menu__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.menu__item {
+  padding: 0.5rem;
+  color: white;
+}
+
+@media screen and (min-width: 0) {
+  .header {
+    flex-flow: column;
+  }
+
+  .menu__list {
+    padding-top: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    flex-flow: row nowrap;
+  }
+
+  .menu__list {
+    padding-top: 0;
+  }
+}
+.introduction {
+  align-items: center;
+  background: linear-gradient(0deg, white, #ececec);
+}
+.introduction__img {
+  object-position: center;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px -10px rgba(0, 0, 0, 0.5);
+}
+.introduction__title {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.plans__list {
+  align-self: center;
+}
+:root {
+  font: 16px "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,0 @@
-.apresentacao {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-
-    background: linear-gradient(0deg, white, var(--bg-cinza-claro));
-}

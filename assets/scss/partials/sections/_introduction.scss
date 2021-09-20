@@ -1,0 +1,47 @@
+// ** Imports **
+
+@use "../variables" as var;
+@use "../placeholder-selectors";
+
+// ** Introduction **
+
+.introduction {
+  @extend %container;
+  @extend %flex-column;
+  
+  align-items: center;
+
+  background: linear-gradient(0deg, var.$white, var.$light-gray);
+
+  &__img {
+    object-position: center;
+    object-fit: cover;
+  
+    aspect-ratio: 1 / 1;
+    width: 150px;
+  
+    border-radius: 50%;
+  
+    box-shadow: var.$box-shadow;
+  }
+
+  &__title {
+    @extend %title;
+
+    text-align: center;
+
+    margin-top: .5rem;
+  }
+
+  &__description {
+    @extend %text;
+  }
+
+  &__socials-list {
+    @extend %icon-list;
+  }
+
+  &__social-item {
+    @extend %icon-item;
+  }
+}

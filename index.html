@@ -31,67 +31,106 @@
 </head>
 
 <body>
-  <header class="cabecalho">
-    <a href="#"><img class="cabecalho__logo" src="./assets/img/cabecalho/logo.png" alt="Logo do website"></a>
+  <header class="header">
+    <a href="index.html"><img class="header__logo" src="./assets/img/header/logo.png" alt="Logo do website"></a>
     <nav class="menu">
-      <ul class="menu__lista">
-        <li class="menu__lista--item"><a href="#sobre-mim">Sobre mim</a></li>
-        <li class="menu__lista--item"><a href="#redes-sociais">Redes sociais</a></li>
-        <li class="menu__lista--item"><a href="#habilidades">Habilidades</a></li>
-        <li class="menu__lista--item"><a href="#planos">Planos</a></li>
-        <li class="menu__lista--item"><a href="#projetos">Projetos</a></li>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#sobre-mim">Sobre mim</a></li>
+        <li class="menu__item"><a href="#redes-sociais">Redes sociais</a></li>
+        <li class="menu__item"><a href="#habilidades">Habilidades</a></li>
+        <li class="menu__item"><a href="#planos">Planos</a></li>
+        <li class="menu__item"><a href="#projetos">Projetos</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="apresentacao container" id="sobre-mim">
-      <div class="apresentacao__imagem"></div>
-      <h1 class="apresentacao__titulo titulo">Heitor Lisboa Colares Novais</h1>
-      <p class="apresentacao__descricao">
+    <section class="introduction" id="sobre-mim">
+      <img src="assets/img/introduction/foto-perfil.png" alt="Foto de perfil" class="introduction__img"></img>
+      <h1 class="introduction__title">Heitor Lisboa Colares Novais</h1>
+      <p class="introduction__description">
         Sou um estudante de programação muito entusiasmado, curioso e que adora sair criando qualquer projeto que der na telha. Além de, obviamente, programação, tenho interesse em música e jogos.
       </p>
-      <ul class="apresentacao__social" id="redes-sociais">
-        <li class="apresentacao__social--item"><a href="https://www.youtube.com/channel/UC0oC2ZbBdbNa-wqgeFIWg8g" title="Meu canal no Youtube"><img src="./assets/img/apresentacao/youtube-logo.png" alt="Logo do Youtube"></a></li>
-        <li class="apresentacao__social--item"><a href="https://github.com/heitorlisboa" title="Meu perfil no GitHub"><img src="./assets/img/apresentacao/github-logo.png" alt="Logo do GitHub"></a></li>
-        <li class="apresentacao__social--item"><a href="https://myanimelist.net/profile/AnchorDz" title="Meu perfil no MyAnimeList"><img src="./assets/img/apresentacao/mal-logo.png" alt="Logo do MyAnimeList"></a></li>
-        <li class="apresentacao__social--item"><img src="./assets/img/apresentacao/meu-discord.png" alt="Discord: Heitor#7447"></div></li>
+      <ul class="introduction__socials-list" id="redes-sociais">
+        <li class="introduction__social-item">
+          <a href="https://github.com/heitorlisboa" title="Meu perfil no GitHub">
+            <img src="./assets/img/introduction/github-logo.png" alt="Logo do GitHub">
+          </a>
+        </li>
+        <li class="introduction__social-item">
+          <img src="./assets/img/introduction/meu-discord.png" alt="Discord: Heitor#7447">
+        </li>
       </ul>
     </section>
 
-    <section class="habilidades container" id="habilidades">
-      <h2 class="habilidades__titulo titulo">Habilidades</h2>
-      <p class="habilidades__descricao">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, facilis harum fuga sequi officia perferendis. Obcaecati accusantium possimus quos, iusto dicta optio. Quibusdam recusandae cum assumenda perferendis maxime architecto velit?
+    <section class="abilites" id="habilidades">
+      <h2 class="abilites__title">Habilidades</h2>
+      <p class="abilites__description">
+        Estou estudando e tenho conhecimento médio nas seguintes tecnologias: Python, Django, HTML5, CSS3, JavaScript e Sass
       </p>
-      <ul class="habilidades__lista">
-        <li class="habilidades__lista--item"><img class="habilidades__lista--imagem" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="Logo do Python"></li>
-        <li class="habilidades__lista--item"><img class="habilidades__lista--imagem" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" alt="Logo do Django"></li>
-        <li class="habilidades__lista--item"><img class="habilidades__lista--imagem" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="Logo do HTML"></li>
-        <li class="habilidades__lista--item"><img class="habilidades__lista--imagem" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="Logo do CSS"></li>
-        <li class="habilidades__lista--item"><img class="habilidades__lista--imagem" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="Logo do JavaScript"></li>
+      <ul class="abilites__list">
+        <li class="abilites__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="Logo do Python">
+        </li>
+        <li class="abilites__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" alt="Logo do Django">
+        </li>
+        <li class="abilites__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="Logo do HTML">
+        </li>
+        <li class="abilites__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="Logo do CSS">
+        </li>
+        <li class="abilites__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="Logo do JavaScript">
+        </li>
+        <li class="abilites__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="Logo do Sass">
+        </li>
       </ul>
     </section>
 
-    <section class="planos container">
-      <h2 class="planos__titulo titulo">Planos</h2>
-      <p class="planos__descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam itaque deserunt, harum atque soluta corrupti laudantium quam neque! Aliquid perspiciatis molestias, magni aliquam cumque ad rem sed exercitationem sequi id?</p>
-      <ul class="planos__lista">
-        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="Logo do Sass" class="planos__lista--imagem"></li>
-        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Logo do NodeJS" class="planos__lista--imagem"></li>
-        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="Logo do TypeScript" class="planos__lista--imagem"></li>
-        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="Logo do React" class="planos__lista--imagem"></li>
-        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Logo do Linux" class="planos__lista--imagem"></li>
-        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="Logo do C Sharp" class="planos__lista--imagem"></li>
-        <li class="planos__lista--item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="Logo do dot NET" class="planos__lista--imagem"></li>
+    <section class="plans" id="planos">
+      <h2 class="plans__title">Planos</h2>
+      <p class="plans__description">
+        Planejo, em um futuro próximo, estudar as seguintes tecnologias: NodeJS, TypeScript, ReactJS, Linux, C&sharp; e &dot;NET
+      </p>
+      <ul class="plans__list">
+        <li class="plans__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Logo do NodeJS">
+        </li>
+        <li class="plans__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="Logo do TypeScript">
+        </li>
+        <li class="plans__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="Logo do React">
+        </li>
+        <li class="plans__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Logo do Linux">
+        </li>
+        <li class="plans__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="Logo do C Sharp">
+        </li>
+        <li class="plans__item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="Logo do dot NET">
+        </li>
       </ul>
     </section>
 
-    <section class="projetos container">
-      <h2 class="projetos__titulo titulo">Projetos</h2>
-      <p class="projetos__descricao"></p>
-      <ul class="projetos__lista">
-        <li class="projetos__lista--item"><a href="#"></a></li>
+    <section class="projects" id="projetos">
+      <h2 class="projects__title">Projetos</h2>
+      <p class="projects__description"></p>
+      <ul class="projects__list">
+        <li class="projects__item">
+          <a href="#">
+
+          </a>
+        </li>
+        <li class="projects__item">
+          <a href="#">
+
+          </a>
+        </li>
       </ul>
     </section>
   </main>
