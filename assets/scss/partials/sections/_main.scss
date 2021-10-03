@@ -1,0 +1,34 @@
+// ** Imports **
+
+@use "../variables" as var;
+
+// ** Main **
+
+.btn-dark-mode {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+
+  padding: .5rem 1rem;
+
+  background-color: var.$light-gray;
+  
+  border: 1px solid var.$gray;
+  border-radius: 1rem;
+}
+
+.btn-dark-mode:hover {
+  cursor: pointer;
+}
+
+.dark {
+  background-color: var.$dark-gray;
+  color: var.$white;
+
+  .btn-dark-mode {
+    color: var.$white;
+    background-color: var.$gray;
+
+    border: 1px solid var.$white;
+  }
+}

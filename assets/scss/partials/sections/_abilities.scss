@@ -27,3 +27,11 @@
     @extend %icon-item;
   }
 }
+
+.dark {
+  .abilities {
+    &__list {
+      @extend %icon-list--dark;
+    }
+  }
+}

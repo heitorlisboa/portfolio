@@ -45,3 +45,15 @@
     @extend %icon-item;
   }
 }
+
+// ** Dark mode **
+
+.dark {
+  .introduction {
+    background: transparent;
+
+    &__social-item {
+      filter: invert(100%);
+    }
+  }
+}

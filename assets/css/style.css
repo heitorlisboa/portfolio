@@ -1,5 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.btn-dark-mode {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 0.5rem 1rem;
+  background-color: #ececec;
+  border: 1px solid #5a5a5a;
+  border-radius: 1rem;
+}
+
+.btn-dark-mode:hover {
+  cursor: pointer;
+}
+
+.dark {
+  background-color: #181818;
+  color: white;
+}
+.dark .btn-dark-mode {
+  color: white;
+  background-color: #5a5a5a;
+  border: 1px solid white;
+}
+
 .projects, .plans, .introduction, .abilities {
   padding: 2rem 6%;
 }
@@ -20,6 +44,12 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
+.dark .plans__list, .dark .abilities__list {
+  background-color: #ececec;
+  padding: 0.5rem 0;
+  border: 2px solid #5a5a5a;
+  border-radius: 20px;
+}
 
 .plans__item, .introduction__social-item, .abilities__item {
   margin: 0 0.5rem;
@@ -35,7 +65,7 @@
   }
 }
 
-.projects__description, .plans__description, .introduction__description, .abilities__description {
+.plans__description, .introduction__description, .abilities__description {
   text-align: justify;
   margin-bottom: 1rem;
 }
@@ -43,6 +73,11 @@
 .projects__title, .plans__title, .introduction__title, .abilities__title {
   font: 1.75em "Nothing You Could Do", cursive;
   margin-bottom: 1rem;
+}
+
+.projects__subtitle {
+  font: 1.25em "Nothing You Could Do", cursive;
+  margin-bottom: 0.5rem;
 }
 
 .abilities__list {
@@ -105,9 +140,24 @@
   text-align: center;
   margin-top: 0.5rem;
 }
+.dark .introduction {
+  background: transparent;
+}
+.dark .introduction__social-item {
+  filter: invert(100%);
+}
+
 .plans__list {
   align-self: center;
 }
+.projects__item {
+  margin: 2rem 0;
+}
+.projects__item-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
 :root {
   font: 16px "Ubuntu", Arial, Helvetica, sans-serif;
 }
