@@ -20,13 +20,15 @@
 
 [data-tooltip] {
   position: relative;
-  cursor: pointer;
 }
 [data-tooltip]::before, [data-tooltip]::after {
   visibility: hidden;
   position: absolute;
   bottom: 100%;
   left: 50%;
+}
+[data-tooltip]:hover {
+  cursor: pointer;
 }
 [data-tooltip]:hover::before, [data-tooltip]:hover::after {
   visibility: visible;
@@ -93,13 +95,16 @@
 .plans__item, .introduction__social-item, .abilities__item {
   margin: 0 0.5rem;
 }
+.plans__item img, .introduction__social-item img, .abilities__item img {
+  height: 100%;
+}
 @media screen and (min-width: 0px) {
-  .plans__item img, .introduction__social-item img, .abilities__item img {
+  .plans__item, .introduction__social-item, .abilities__item {
     height: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .plans__item img, .introduction__social-item img, .abilities__item img {
+  .plans__item, .introduction__social-item, .abilities__item {
     height: 60px;
   }
 }

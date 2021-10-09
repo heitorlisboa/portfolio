@@ -37,13 +37,15 @@
   margin: 0 .5rem;
 
   & img {
-    @media screen and (min-width: var.$phone) {
-      height: 50px;
-    }
+    height: 100%;
+  }
 
-    @media screen and (min-width: var.$desktop) {
-      height: 60px;
-    }
+  @media screen and (min-width: var.$phone) {
+    height: 50px;
+  }
+
+  @media screen and (min-width: var.$desktop) {
+    height: 60px;
   }
 }
 

@@ -15,7 +15,10 @@
   }
 
   function resetTooltip(tooltip, index) {
-    tooltip.setAttribute('data-tooltip', tooltipsTexts[index])
+    setTimeout(
+      tooltip.setAttribute('data-tooltip', tooltipsTexts[index]),
+      1000
+    )
   }
 
   const buttonDarkMode = document.querySelector('[data-btn-dark-mode]')
