@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  font: 16px "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
 .btn-dark-mode {
   position: fixed;
   bottom: 15px;
@@ -14,6 +18,38 @@
   cursor: pointer;
 }
 
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+[data-tooltip]::before, [data-tooltip]::after {
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+}
+[data-tooltip]:hover::before, [data-tooltip]:hover::after {
+  visibility: visible;
+}
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  width: 200px;
+  padding: 0.5rem;
+  margin-left: -100px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+[data-tooltip]::after {
+  content: "";
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
 .dark {
   background-color: #181818;
   color: white;
@@ -22,6 +58,9 @@
   color: white;
   background-color: #5a5a5a;
   border: 1px solid white;
+}
+.dark [data-tooltip]::before, .dark [data-tooltip]::after {
+  filter: invert(100%);
 }
 
 .projects, .plans, .introduction, .abilities {
@@ -143,7 +182,7 @@
 .dark .introduction {
   background: transparent;
 }
-.dark .introduction__social-item {
+.dark .introduction__social-item img {
   filter: invert(100%);
 }
 
@@ -156,10 +195,6 @@
 .projects__item-title {
   font-weight: bold;
   margin-bottom: 0.5rem;
-}
-
-:root {
-  font: 16px "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
