@@ -65,22 +65,22 @@
   filter: invert(100%);
 }
 
-.projects, .plans, .introduction, .abilities {
+.projects, .plans, .abilities, .introduction {
   padding: 2rem 6%;
 }
 @media screen and (min-width: 1024px) {
-  .projects, .plans, .introduction, .abilities {
+  .projects, .plans, .abilities, .introduction {
     padding-left: calc(50vw - 400px);
     padding-right: calc(50vw - 400px);
   }
 }
 
-.projects, .plans, .introduction, .abilities {
+.projects, .plans, .abilities, .introduction {
   display: flex;
   flex-flow: column;
 }
 
-.plans__list, .introduction__socials-list, .abilities__list {
+.plans__list, .abilities__list, .introduction__socials-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -92,29 +92,29 @@
   border-radius: 20px;
 }
 
-.plans__item, .introduction__social-item, .abilities__item {
+.plans__item, .abilities__item, .introduction__social-item {
   margin: 0 0.5rem;
 }
-.plans__item img, .introduction__social-item img, .abilities__item img {
+.plans__item img, .abilities__item img, .introduction__social-item img {
   height: 100%;
 }
 @media screen and (min-width: 0px) {
-  .plans__item, .introduction__social-item, .abilities__item {
+  .plans__item, .abilities__item, .introduction__social-item {
     height: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .plans__item, .introduction__social-item, .abilities__item {
+  .plans__item, .abilities__item, .introduction__social-item {
     height: 60px;
   }
 }
 
-.plans__description, .introduction__description, .abilities__description {
+.plans__description, .abilities__description, .introduction__description {
   text-align: justify;
   margin-bottom: 1rem;
 }
 
-.projects__title, .plans__title, .introduction__title, .abilities__title {
+.projects__title, .plans__title, .abilities__title, .introduction__title {
   font: 1.75em "Nothing You Could Do", cursive;
   margin-bottom: 1rem;
 }
@@ -124,22 +124,19 @@
   margin-bottom: 0.5rem;
 }
 
-.abilities__list {
-  align-self: center;
-}
-.header {
+.navbar {
   display: flex;
   padding: 0.5rem 1rem;
   justify-content: space-between;
   align-items: center;
   background-color: black;
 }
-.header__logo {
+.navbar__logo {
   aspect-ratio: 3/1;
   width: 150px;
 }
 
-.menu__list {
+.menu {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -151,20 +148,20 @@
 }
 
 @media screen and (min-width: 0px) {
-  .header {
+  .navbar {
     flex-flow: column;
   }
 
-  .menu__list {
-    padding-top: 0.5rem;
+  .menu {
+    margin-top: 0.5rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .header {
+  .navbar {
     flex-flow: row nowrap;
   }
 
-  .menu__list {
+  .menu {
     padding-top: 0;
   }
 }
@@ -191,6 +188,9 @@
   filter: invert(100%);
 }
 
+.abilities__list {
+  align-self: center;
+}
 .plans__list {
   align-self: center;
 }
