@@ -1,11 +1,11 @@
 (() => {
-  let darkModeActive = JSON.parse(localStorage.getItem("darkMode")) || false;
-  if (darkModeActive) {
+  const darkModeActive = () => JSON.parse(localStorage.getItem("darkMode"));
+  if (darkModeActive()) {
     document.body.classList.add("dark")
   }
 
   function toggleDarkMode() {
-    if (darkModeActive) {
+    if (darkModeActive()) {
       document.body.classList.remove("dark");
       localStorage.setItem("darkMode", "false");
     } else {
