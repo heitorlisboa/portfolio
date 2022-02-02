@@ -1,6 +1,5 @@
 # Portfólio Heitor Lisboa
-Portfólio hospedado no GitHub Pages.
 
-**Projeto pausado temporariamente.**
+Meu portfólio feito em Next.js e hospedado na Vercel!
 
-~~Link: [https://heitorlisboa.github.io/portfolio/](https://heitorlisboa.github.io/portfolio/)~~
+Link: []()
