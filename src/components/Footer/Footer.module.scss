@@ -1,0 +1,17 @@
+@use "../../styles/partials/gaps" as gp;
+
+.footer {
+  padding-block: gp.$small;
+}
+
+.socialsTexts {
+  text-transform: lowercase;
+
+  display: flex;
+  gap: gp.$small;
+  justify-content: flex-end;
+
+  a {
+    font-weight: normal;
+  }
+}

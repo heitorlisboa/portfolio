@@ -4,6 +4,8 @@ import Link from "next/link";
 import type { NextPage } from "next";
 import styles from "../src/styles/pages/Home.module.scss";
 
+import Footer from "../src/components/Footer";
+
 const Home: NextPage = () => {
   return (
     <>
@@ -179,31 +181,7 @@ const Home: NextPage = () => {
           </a>
         </section>
       </main>
-
-      <footer className={styles.footer}>
-        <ul className={styles.socialsTexts} aria-label="Redes sociais">
-          <li>
-            <a
-              className="text-anchor"
-              href="https://github.com/heitorlisboa"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-anchor"
-              href="https://www.linkedin.com/in/heitor-lisboa-579b72230/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
-          </li>
-        </ul>
-      </footer>
+      <Footer />
     </>
   );
 };
