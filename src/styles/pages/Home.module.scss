@@ -50,12 +50,36 @@
   }
 }
 
-.mainTitle {
+// Main
+.hero {
+  display: grid;
+  gap: gp.$big;
+  grid-template-columns: 1fr min(20vw, 300px);
+
+  margin-bottom: gp.$bigger;
+
+  @media (max-width: 800px) {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+
+.heroImage {
+  height: unset;
+
+  border-radius: 2.5%;
+
+  @media (max-width: 800px) {
+    height: 200px;
+  }
+}
+
+.heroTitle {
   font-size: 3rem;
 
   max-width: 23ch;
 
-  margin-block: 1rem 0;
+  margin-block: 0;
 
   span {
     display: inline-block;
@@ -68,12 +92,11 @@
   }
 }
 
-// Main
 .abilitiesList {
   display: grid;
   gap: gp.$medium gp.$bigger;
   grid-template-columns: repeat(auto-fit, 12rem);
-  max-width: 45rem;
+  max-width: 60rem;
 
   li {
     background-color: clr.$subtle-gray;

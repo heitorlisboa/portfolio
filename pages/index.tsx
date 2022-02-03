@@ -43,13 +43,19 @@ const Home: NextPage = () => {
             </a>
           </li>
         </ul>
-        <h1 className={styles.mainTitle}>
-          Olá, sou Heitor Lisboa! Desenvolvedor Front End e estudante de
-          Engenharia de Software.
-        </h1>
       </header>
 
       <main id="main-content">
+        <div className={styles.hero}>
+          <h1 className={styles.heroTitle}>
+            Olá, sou <span className={styles.name}>Heitor Lisboa</span>!
+            Desenvolvedor Front End e estudante de Engenharia de Software.
+          </h1>
+          <img
+            className={styles.heroImage}
+            src="/img/hero-image.webp"
+          />
+        </div>
         <section>
           <h2>Sobre mim</h2>
           <p>
@@ -94,6 +100,7 @@ const Home: NextPage = () => {
             <li>HTML &amp; CSS</li>
             <li>Javascript ES6</li>
             <li>Sass</li>
+            <li>Typescript</li>
             <li>React</li>
             <li>Next.js</li>
             <li>Python</li>
@@ -117,9 +124,10 @@ const Home: NextPage = () => {
               </Link>
               <h3>Cosmo Mapeamento</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Nostrum explicabo consequuntur rerum delectus quis! Natus
-                assumenda perferendis itaque modi quam.
+                Esse projeto consiste na reconstrução de um website previamente
+                existente &ndash; o Cosmo Mapeamento &ndash; mas com um front
+                end feito totalmente do zero de maneira responsiva e acessível
+                utilizando React
               </p>
               <Link href="/works/cosmo-mapeamento">
                 <a className="text-anchor">Detalhes do projeto</a>
@@ -140,9 +148,10 @@ const Home: NextPage = () => {
               </Link>
               <h3>Aluracord</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Nostrum explicabo consequuntur rerum delectus quis! Natus
-                assumenda perferendis itaque modi quam.
+                O Aluracord consiste em um chat em tempo real, inspirado no
+                Discord e feito durante a Imersão React 2022 da Alura, porém,
+                sem utilização de nada que foi fornecido pelos instrutores,
+                construído completamente do zero utilizando Next.js
               </p>
               <Link href="/works/aluracord">
                 <a className="text-anchor">Detalhes do projeto</a>
@@ -154,8 +163,8 @@ const Home: NextPage = () => {
         <section>
           <h2>Contato</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt at
-            commodi culpa sit iste. Dolores hic quam impedit quis ullam.
+            A fim de construir algo juntos? Sinta-se livre pra me contatar se
+            estiver procurando um desenvolvedor ou simplesmente quiser conectar!
           </p>
           <a className="text-anchor" href="mailto:heitor01101000@gmail.com">
             heitor01101000@gmail.com
