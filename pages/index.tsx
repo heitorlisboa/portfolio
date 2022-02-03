@@ -171,7 +171,7 @@ const Home: NextPage = () => {
             A fim de construir algo juntos? Sinta-se livre pra me contatar se
             estiver procurando um desenvolvedor ou simplesmente quiser conectar!
           </p>
-          <a className="text-anchor" href="mailto:heitor01101000@gmail.com">
+          <a className={`${styles.emailLink} text-anchor`} href="mailto:heitor01101000@gmail.com">
             heitor01101000@gmail.com
           </a>
         </section>
