@@ -32,7 +32,11 @@ const Home: NextPage = () => {
             </a>
           </li>
           <li>
-            <a href="" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/heitor-lisboa-579b72230/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/svg/linkedin-icon.svg"
                 alt="LinkedIn"
@@ -186,7 +190,12 @@ const Home: NextPage = () => {
             </a>
           </li>
           <li>
-            <a className="text-anchor" href="" target="_blank" rel="noreferrer">
+            <a
+              className="text-anchor"
+              href="https://www.linkedin.com/in/heitor-lisboa-579b72230/"
+              target="_blank"
+              rel="noreferrer"
+            >
               LinkedIn
             </a>
           </li>
