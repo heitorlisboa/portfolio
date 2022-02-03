@@ -68,6 +68,16 @@ p {
   }
 }
 
+.image-anchor {
+  display: block;
+
+  outline-offset: 0;
+
+  &:focus-visible img {
+    border-radius: 5px;
+  }
+}
+
 .text-anchor {
   color: inherit;
   font-weight: 500;

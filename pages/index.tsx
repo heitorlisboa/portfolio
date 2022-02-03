@@ -52,8 +52,8 @@ const Home: NextPage = () => {
       <main id="main-content">
         <div className={styles.hero}>
           <h1 className={styles.heroTitle}>
-            Olá, sou <span className={styles.name}>Heitor Lisboa</span>!
-            Desenvolvedor Front End e estudante de Engenharia de Software.
+            Olá, sou Heitor Lisboa! Desenvolvedor Front End e estudante de
+            Engenharia de Software.
           </h1>
           <img className={styles.heroImage} src="/img/hero-image.webp" />
         </div>
@@ -113,7 +113,7 @@ const Home: NextPage = () => {
           <ul className={styles.projectList} aria-labelledby="projects-title">
             <article className={styles.project} role="listitem">
               <Link href="/works/cosmo-mapeamento">
-                <a>
+                <a className="image-anchor">
                   <Image
                     src="/img/cosmo-mapeamento.webp"
                     alt="Print do website Cosmo Mapeamento"
@@ -139,7 +139,7 @@ const Home: NextPage = () => {
 
             <article className={styles.project} role="listitem">
               <Link href="/works/aluracord">
-                <a>
+                <a className="image-anchor">
                   <Image
                     src="/img/aluracord.webp"
                     alt="Print do website Aluracord"
@@ -171,7 +171,10 @@ const Home: NextPage = () => {
             A fim de construir algo juntos? Sinta-se livre pra me contatar se
             estiver procurando um desenvolvedor ou simplesmente quiser conectar!
           </p>
-          <a className={`${styles.emailLink} text-anchor`} href="mailto:heitor01101000@gmail.com">
+          <a
+            className={`${styles.emailLink} text-anchor`}
+            href="mailto:heitor01101000@gmail.com"
+          >
             heitor01101000@gmail.com
           </a>
         </section>
