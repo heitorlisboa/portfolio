@@ -153,30 +153,30 @@
     transition: opacity 1s ease;
   }
 
-  a {
-    position: relative;
-
-    &::before {
-      content: "";
-      background-image: url(/svg/forward-icon.svg);
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-position: center right;
-
-      position: absolute;
-      top: 0;
-      left: 100%;
-      right: -1.5em;
-      bottom: -0.2em;
-    }
-  }
-
   &:hover {
     transform: scale(105%);
 
     img {
       opacity: 1;
     }
+  }
+}
+
+.projectLink {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url(/svg/forward-icon.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center right;
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: -1.5em;
+    bottom: -0.2em;
   }
 }
 

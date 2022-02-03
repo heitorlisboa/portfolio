@@ -51,10 +51,7 @@ const Home: NextPage = () => {
             Olá, sou <span className={styles.name}>Heitor Lisboa</span>!
             Desenvolvedor Front End e estudante de Engenharia de Software.
           </h1>
-          <img
-            className={styles.heroImage}
-            src="/img/hero-image.webp"
-          />
+          <img className={styles.heroImage} src="/img/hero-image.webp" />
         </div>
         <section>
           <h2>Sobre mim</h2>
@@ -130,7 +127,9 @@ const Home: NextPage = () => {
                 utilizando React
               </p>
               <Link href="/works/cosmo-mapeamento">
-                <a className="text-anchor">Detalhes do projeto</a>
+                <a className={`${styles.projectLink} text-anchor`}>
+                  Detalhes do projeto
+                </a>
               </Link>
             </article>
 
@@ -154,7 +153,9 @@ const Home: NextPage = () => {
                 construído completamente do zero utilizando Next.js
               </p>
               <Link href="/works/aluracord">
-                <a className="text-anchor">Detalhes do projeto</a>
+                <a className={`${styles.projectLink} text-anchor`}>
+                  Detalhes do projeto
+                </a>
               </Link>
             </article>
           </ul>
