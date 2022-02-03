@@ -1,0 +1,156 @@
+@use "../partials/colors" as clr;
+@use "../partials/gaps" as gp;
+@use "../partials/screen-breakpoints" as sb;
+
+// Header
+.header {
+  padding-block: gp.$big gp.$small;
+}
+
+.skipContent {
+  background-color: black;
+
+  color: white;
+
+  position: absolute;
+  top: 0;
+  left: gp.$small;
+
+  padding: gp.$smaller gp.$small;
+  border-radius: 0px 0px 5px 5px;
+
+  transform: translateY(-100%);
+  transition: transform 500ms ease-out;
+
+  &:focus-visible {
+    outline-offset: 0;
+
+    transform: translateY(0%);
+  }
+}
+
+.socialsIcons {
+  display: flex;
+  gap: gp.$small;
+
+  li {
+    width: 30px;
+    aspect-ratio: 1;
+  }
+  a {
+    display: block;
+
+    opacity: 0.5;
+    transition: opacity 500ms ease;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
+
+.mainTitle {
+  font-size: 3rem;
+
+  max-width: 23ch;
+
+  margin-block: 1rem 0;
+
+  span {
+    display: inline-block;
+  }
+
+  @media (max-width: sb.$max-tablet) {
+    font-size: clamp(2rem, 3.5vw + 1rem, 3rem);
+
+    padding-inline-end: gp.$small;
+  }
+}
+
+// Main
+.abilitiesList {
+  display: grid;
+  gap: gp.$medium gp.$bigger;
+  grid-template-columns: repeat(auto-fit, 12rem);
+  max-width: 45rem;
+
+  li {
+    background-color: clr.$subtle-gray;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    padding-block: gp.$small;
+    padding-inline: gp.$medium gp.$big;
+    border-inline-start: 5px solid clr.$light-gray;
+    box-shadow: 0 0.125rem 0.25rem 0 clr.$light-shadow;
+
+    transition: transform 1s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      box-shadow: 0 0.5rem 1rem -0.25rem clr.$medium-shadow;
+
+      opacity: 0;
+
+      transition: opacity 1s ease;
+    }
+
+    &:hover {
+      transform: translateY(-10%);
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.projectList {
+  display: flex;
+  gap: gp.$bigger;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.project {
+  flex-basis: calc(calc(35rem - 100%) * 99);
+  flex-grow: 1;
+
+  transition: transform 1s ease;
+
+  img {
+    opacity: 0.75;
+    transition: opacity 1s ease;
+  }
+
+  &:hover {
+    transform: scale(105%);
+
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+// Footer
+.footer {
+  padding-block: gp.$small;
+}
+
+.socialsTexts {
+  text-transform: lowercase;
+
+  display: flex;
+  gap: gp.$small;
+  justify-content: flex-end;
+
+  a {
+    font-weight: normal;
+  }
+}
