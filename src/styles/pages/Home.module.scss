@@ -53,14 +53,14 @@
 // Main
 .hero {
   display: grid;
-  gap: gp.$big;
+  column-gap: gp.$big;
+  row-gap: gp.$small;
   grid-template-columns: 1fr min(20vw, 300px);
 
   margin-bottom: gp.$bigger;
 
-  @media (max-width: 800px) {
+  @media (max-width: sb.$max-tablet) {
     grid-template-columns: auto;
-    grid-template-rows: auto;
   }
 }
 
@@ -69,27 +69,15 @@
 
   border-radius: 2.5%;
 
-  @media (max-width: 800px) {
+  @media (max-width: sb.$max-tablet) {
     height: 200px;
   }
 }
 
 .heroTitle {
-  font-size: 3rem;
-
   max-width: 23ch;
 
   margin-block: 0;
-
-  span {
-    display: inline-block;
-  }
-
-  @media (max-width: sb.$max-tablet) {
-    font-size: clamp(2rem, 3.5vw + 1rem, 3rem);
-
-    padding-inline-end: gp.$small;
-  }
 }
 
 .abilitiesList {
