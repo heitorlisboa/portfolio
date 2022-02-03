@@ -74,9 +74,10 @@ p {
   &::after {
     content: "";
     position: absolute;
-    inset: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
     bottom: -0.35em;
-    z-index: -1;
 
     background: linear-gradient(black, black);
     background-size: 0% 3px;
