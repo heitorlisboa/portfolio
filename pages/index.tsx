@@ -53,7 +53,7 @@ const Home: NextPage = () => {
         <section>
           <h2>Sobre mim</h2>
           <p>
-            Opa, eai? Meu nome é Heitor. Sou um introvertido apaixonado por
+            Opa, e aí? Meu nome é Heitor. Sou um introvertido apaixonado por
             tecnologia e que adora construir coisas através do código.
           </p>
           <p>
@@ -72,11 +72,11 @@ const Home: NextPage = () => {
           </p>
           <p>
             Entretanto, ao passar dos anos, não saía da minha cabeça o
-            pensamento de querer me aventurar e não sair mais desse mundo, foi
+            pensamento de querer me aventurar e não sair mais desse mundo. Foi
             então que, aos meus 17 anos, eu tomei uma decisão: mergulhar de
             ponta no universo da tecnologia. A partir daí eu não parei mais,
-            voltei a estudar Python, estudei Django, HTML e CSS, Javascript,
-            Sass etc.
+            voltei a estudar Python, estudei Django, HTML, CSS, Javascript, Sass
+            etc.
           </p>
           <p>
             E hoje aqui estou, focando meus estudos em React, Next.js e
