@@ -27,7 +27,7 @@ footer {
   }
 }
 
-section {
+section:not([class]) {
   &:not(:first-of-type) {
     margin-top: gp.$bigger;
   }
@@ -56,15 +56,17 @@ p {
 
   max-width: 75ch;
 
-  &:not(:first-of-type) {
-    margin-top: gp.$big;
-  }
-  &:not(:last-of-type) {
-    margin-bottom: gp.$big;
-  }
+  &:not([class]) {
+    &:not(:first-of-type) {
+      margin-top: gp.$big;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: gp.$big;
+    }
 
-  &:first-of-type:last-of-type {
-    margin-block: gp.$small;
+    &:first-of-type:last-of-type {
+      margin-block: gp.$small;
+    }
   }
 }
 
