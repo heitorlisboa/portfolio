@@ -4,6 +4,7 @@ import styles from "../src/styles/pages/Home.module.scss";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import MiniCard from "../src/components/MiniCard";
 import Footer from "../src/components/Footer";
 
 const Home: NextPage = () => {
@@ -100,13 +101,13 @@ const Home: NextPage = () => {
             className={styles.abilitiesList}
             aria-labelledby="abilities-title"
           >
-            <li>HTML &amp; CSS</li>
-            <li>Javascript ES6</li>
-            <li>Sass</li>
-            <li>Typescript</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Python</li>
+            <MiniCard>HTML &amp; CSS</MiniCard>
+            <MiniCard>Javascript ES6</MiniCard>
+            <MiniCard>Sass</MiniCard>
+            <MiniCard>Typescript</MiniCard>
+            <MiniCard>React</MiniCard>
+            <MiniCard>Next.js</MiniCard>
+            <MiniCard>Python</MiniCard>
           </ul>
         </section>
 
