@@ -1,7 +1,13 @@
 @use "../../styles/partials/colors" as clr;
 @use "../../styles/partials/gaps" as gp;
 
-.card {
+.list {
+  display: grid;
+  gap: gp.$medium gp.$bigger;
+  grid-template-columns: repeat(auto-fit, 12rem);
+  max-width: 60rem;
+
+  li {
     background-color: clr.$subtle-gray;
 
     position: relative;
@@ -36,3 +42,4 @@
       }
     }
   }
+}
