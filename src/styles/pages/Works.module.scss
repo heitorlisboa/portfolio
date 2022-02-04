@@ -1,0 +1,18 @@
+@use "../partials/gaps" as gp;
+
+.links {
+  margin-bottom: gp.$bigger;
+  
+  li {
+    margin-block: gp.$smaller;
+  }
+}
+
+.features {
+  li {
+    list-style: circle;
+
+    margin-left: 1.2rem;
+    margin-block: gp.$small;
+  }
+}
