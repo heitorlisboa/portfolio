@@ -128,10 +128,7 @@ const Home: NextPage = () => {
               </Link>
               <h3>Cosmo Mapeamento</h3>
               <p>
-                Esse projeto consiste na reconstrução de um website previamente
-                existente &ndash; o Cosmo Mapeamento &ndash; mas com um front
-                end feito totalmente do zero de maneira responsiva e acessível
-                utilizando React
+                Reconstrução responsíva e acessível do website Cosmo Mapeamento
               </p>
               <Link href="/works/cosmo-mapeamento">
                 <a className={`${styles.projectLink} text-anchor`}>
@@ -154,10 +151,8 @@ const Home: NextPage = () => {
               </Link>
               <h3>Aluracord</h3>
               <p>
-                O Aluracord consiste em um chat em tempo real, inspirado no
-                Discord e feito durante a Imersão React 2022 da Alura, porém,
-                sem utilização de nada que foi fornecido pelos instrutores,
-                construído completamente do zero utilizando Next.js
+                Chat em tempo real inspirado no Discord feito durante a Imersão
+                React 2022 da Alura <strong>(projeto original)</strong>
               </p>
               <Link href="/works/aluracord">
                 <a className={`${styles.projectLink} text-anchor`}>
