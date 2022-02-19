@@ -62,7 +62,11 @@ const Home: NextPage = () => {
               Olá, sou Heitor Lisboa! Desenvolvedor Front End e estudante de
               Engenharia de Software.
             </h1>
-            <img className={styles.heroImage} src="/img/hero-image.webp" />
+            <img
+              className={styles.heroImage}
+              src="/img/hero-image.webp"
+              alt="Heitor sorrindo"
+            />
           </div>
           <section>
             <h2>Sobre mim</h2>
