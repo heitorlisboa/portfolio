@@ -32,6 +32,15 @@ section:not([class]) {
   }
 }
 
+article:not([class]) {
+  &:not(:first-of-type) {
+    margin-block-start: var(--size-5);
+  }
+  &:not(:last-of-type) {
+    margin-block-end: var(--size-5);
+  }
+}
+
 h1,
 h2,
 h3,
@@ -49,19 +58,33 @@ h1 {
   font-size: clamp(2rem, 3.5vw + 1rem, 3rem);
 }
 
-p {
+p,
+figcaption {
   max-width: 75ch;
+}
 
+p {
   &:not([class]) {
     &:not(:first-of-type) {
       margin-block-start: var(--size-5);
     }
-    &:not(:last-of-type) {
+    &:not(:last-child) {
       margin-block-end: var(--size-5);
     }
 
-    &:first-of-type:last-of-type {
+    &:where(:first-of-type:last-of-type) {
       margin-block: var(--size-3);
     }
   }
+}
+
+figure {
+  display: grid;
+  gap: var(--size-2);
+  grid-auto-flow: row;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
 }
