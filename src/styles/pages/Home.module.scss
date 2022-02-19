@@ -1,10 +1,8 @@
-@use "../partials/colors" as clr;
-@use "../partials/gaps" as gp;
 @use "../partials/screen-breakpoints" as sb;
 
 // Header
 .header {
-  padding-block: gp.$big gp.$small;
+  padding-block: var(--size-5) var(--size-3);
 }
 
 .skipContent {
@@ -14,9 +12,9 @@
 
   position: absolute;
   top: 0;
-  left: gp.$small;
+  left: var(--size-3);
 
-  padding: gp.$smaller gp.$small;
+  padding: var(--size-2) var(--size-3);
   border-radius: 0px 0px 5px 5px;
 
   transform: translateY(-110%);
@@ -31,12 +29,13 @@
 
 .socialsIcons {
   display: flex;
-  gap: gp.$small;
+  gap: var(--size-3);
 
   li {
     width: 30px;
     aspect-ratio: 1;
   }
+
   a {
     display: block;
 
@@ -53,11 +52,11 @@
 // Main
 .hero {
   display: grid;
-  column-gap: gp.$big;
-  row-gap: gp.$small;
+  column-gap: var(--size-5);
+  row-gap: var(--size-3);
   grid-template-columns: 1fr min(20vw, 300px);
 
-  margin-bottom: gp.$bigger;
+  margin-bottom: var(--size-6);
 
   @media (max-width: sb.$max-tablet) {
     grid-template-columns: auto;
@@ -82,7 +81,7 @@
 
 .projectList {
   display: flex;
-  gap: gp.$bigger;
+  gap: var(--size-6);
   flex-flow: row wrap;
   justify-content: space-between;
 }
@@ -125,8 +124,8 @@
 }
 
 .emailLink {
-  $icon-position: 2em;
-  margin-left: $icon-position;
+  --icon-position: 2em;
+  margin-left: var(--icon-position);
 
   &::before {
     content: "";
@@ -137,7 +136,7 @@
     position: absolute;
     top: 0;
     bottom: -0.2em;
-    left: calc($icon-position * -1);
+    left: calc(var(--icon-position) * -1);
     right: 100%;
   }
 }

@@ -1,14 +1,12 @@
-@use "../../styles/partials/gaps" as gp;
-
 .footer {
-  padding-block: gp.$small;
+  padding-block: var(--size-3);
 }
 
 .socialsTexts {
   text-transform: lowercase;
 
   display: flex;
-  gap: gp.$small;
+  gap: var(--size-3);
   justify-content: flex-end;
 
   a {

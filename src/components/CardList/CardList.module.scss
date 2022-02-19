@@ -1,14 +1,11 @@
-@use "../../styles/partials/colors" as clr;
-@use "../../styles/partials/gaps" as gp;
-
 .list {
   display: grid;
-  gap: gp.$medium gp.$bigger;
+  gap: var(--size-4) var(--size-6);
   grid-template-columns: repeat(auto-fit, 12rem);
   max-width: 60rem;
 
   li {
-    background-color: clr.$subtle-gray;
+    background-color: var(--gray-0);
 
     color: black;
 
@@ -16,10 +13,10 @@
     display: flex;
     align-items: center;
 
-    padding-block: gp.$small;
-    padding-inline: gp.$medium gp.$big;
-    border-inline-start: 5px solid clr.$light-gray;
-    box-shadow: 0 0.125rem 0.25rem 0 clr.$light-shadow;
+    padding-block: var(--size-3);
+    padding-inline: var(--size-4) var(--size-5);
+    border-inline-start: 5px solid var(--gray-1);
+    box-shadow: 0 0.125rem 0.25rem 0 var(--black-alpha-1);
 
     transition: transform 1s ease;
 
@@ -29,7 +26,7 @@
       inset: 0;
       z-index: -1;
 
-      box-shadow: 0 0.5rem 1rem -0.25rem clr.$medium-shadow;
+      box-shadow: 0 0.5rem 1rem -0.25rem var(--black-alpha-2);
 
       opacity: 0;
 

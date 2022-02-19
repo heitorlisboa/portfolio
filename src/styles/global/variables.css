@@ -1,0 +1,26 @@
+:root {
+  /* SIZES */
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 1rem;
+  --size-4: 1.5rem;
+  --size-5: 2rem;
+  --size-6: 4rem;
+  --size-7: 6rem;
+
+  /* COLORS */
+  /* Grayscale */
+  --gray-0: hsl(0, 0%, 99%);
+  --gray-1: hsl(0, 0%, 90%);
+  --gray-2: hsl(0, 0%, 70%);
+  --gray-3: hsl(0, 0%, 40%);
+  --gray-4: hsl(0, 0%, 20%);
+  --gray-5: hsl(0, 0%, 10%);
+
+  /* Alpha */
+  --black-alpha-1: hsla(0, 0%, 0%, 0.1);
+  --black-alpha-2: hsla(0, 0%, 0%, 0.3);
+
+  /* Colorful */
+  --blue: hsl(209, 80%, 60%);
+}
