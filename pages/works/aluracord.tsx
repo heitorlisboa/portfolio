@@ -54,7 +54,7 @@ const Aluracord: NextPage = () => {
         </section>
         <section>
           <h2 id="technologies">Tecnologias utilizadas</h2>
-          <CardList aria-aria-labelledby="technologies">
+          <CardList aria-labelledby="technologies">
             <li>Next.js</li>
             <li>Typescript</li>
             <li>Sass</li>

@@ -50,7 +50,7 @@ const CosmoMapeamento: NextPage = () => {
         </section>
         <section>
           <h2 id="technologies">Tecnologias utilizadas</h2>
-          <CardList aria-aria-labelledby="technologies">
+          <CardList aria-labelledby="technologies">
             <li>React</li>
             <li>Typescript</li>
             <li>Sass</li>
