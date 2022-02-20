@@ -63,13 +63,12 @@
   }
 }
 
-.heroImage {
-  height: unset;
+.heroImageContainer {
+  aspect-ratio: 1;
+  max-height: 200px;
 
-  border-radius: 2.5%;
-
-  @media (max-width: sb.$max-tablet) {
-    height: 200px;
+  img {
+    border-radius: 2.5%;
   }
 }
 
