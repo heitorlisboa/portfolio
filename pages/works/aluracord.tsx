@@ -12,7 +12,9 @@ const Aluracord: NextPage = () => {
         <title>Heitor Lisboa - Aluracord</title>
       </Head>
       <main>
-        <h1>Aluracord</h1>
+        <h1>
+          Aluracord &mdash; <span className="wip-warning">Página em construção</span>
+        </h1>
         <p>
           O Aluracord consiste em um chat em tempo real, inspirado no Discord e
           feito durante a Imersão React 2022 da Alura, porém, sem utilização de
