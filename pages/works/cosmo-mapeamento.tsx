@@ -145,7 +145,7 @@ const CosmoMapeamento: NextPage = () => {
               <p>
                 Então, eu utilizei uma função do próprio React para criar uma
                 referência para cada seção recebida pelo componente e as
-                associeis aos itens da navegação e às próprias seções. Dessa
+                associei aos itens da navegação e às próprias seções. Dessa
                 forma, foi possível acessar diretamente os itens da navegação
                 para definir um comportamento pra eles no observador, e informar
                 quais elementos deveriam ser observados.
