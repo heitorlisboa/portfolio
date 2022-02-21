@@ -14,3 +14,8 @@
     margin-block: var(--size-3);
   }
 }
+
+.video {
+  width: min(100%, 40rem);
+  max-height: 350px;
+}
