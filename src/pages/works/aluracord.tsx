@@ -1,10 +1,10 @@
-import type { NextPage } from "next";
-import styles from "../../src/styles/pages/Works.module.scss";
+import type { NextPage } from 'next';
+import styles from '../../styles/pages/Works.module.scss';
 
-import Head from "next/head";
-import Container from "../../src/components/Container";
-import CardList from "../../src/components/CardList";
-import Footer from "../../src/components/Footer";
+import Head from 'next/head';
+import Container from '../../components/Container';
+import CardList from '../../components/CardList';
+import Footer from '../../components/Footer';
 
 const Aluracord: NextPage = () => {
   return (
@@ -16,7 +16,7 @@ const Aluracord: NextPage = () => {
       <main>
         <Container>
           <h1>
-            Aluracord &mdash;{" "}
+            Aluracord &mdash;{' '}
             <span className="wip-warning">Página em construção</span>
           </h1>
           <p>

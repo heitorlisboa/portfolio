@@ -1,12 +1,13 @@
-import type { NextPage } from "next";
-import styles from "../src/styles/pages/Home.module.scss";
+import type { NextPage } from 'next';
 
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import Container from "../src/components/Container";
-import CardList from "../src/components/CardList";
-import Footer from "../src/components/Footer";
+import styles from '../styles/pages/Home.module.scss';
+
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import Container from '../components/Container';
+import CardList from '../components/CardList';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -160,7 +161,7 @@ const Home: NextPage = () => {
                 <h3>Aluracord</h3>
                 <p>
                   Chat em tempo real inspirado no Discord feito durante a
-                  Imersão React 2022 da Alura{" "}
+                  Imersão React 2022 da Alura{' '}
                   <strong>(projeto original)</strong>
                 </p>
                 <Link href="/works/aluracord">

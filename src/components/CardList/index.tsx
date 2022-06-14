@@ -1,5 +1,6 @@
-import type { FC, HTMLProps } from "react";
-import styles from "./CardList.module.scss";
+import type { FC, HTMLProps } from 'react';
+
+import styles from './CardList.module.scss';
 
 const CardList: FC<HTMLProps<HTMLUListElement>> = ({
   children,

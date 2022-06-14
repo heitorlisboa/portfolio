@@ -22,7 +22,7 @@
     transition: transform 1s ease;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
       z-index: -1;
