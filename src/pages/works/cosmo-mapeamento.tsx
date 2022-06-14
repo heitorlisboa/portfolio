@@ -1,13 +1,12 @@
 import Head from 'next/head';
-import type { NextPage } from 'next';
 
 import styles from '@/styles/pages/Works.module.scss';
 
-import Container from '@/components/Container';
-import CardList from '@/components/CardList';
-import Footer from '@/components/Footer';
+import { Container } from '@/components/Container';
+import { CardList } from '@/components/CardList';
+import { Footer } from '@/components/Footer';
 
-const CosmoMapeamento: NextPage = () => {
+export default function CosmoMapeamentoPage() {
   return (
     <>
       <Head>
@@ -285,6 +284,4 @@ const CosmoMapeamento: NextPage = () => {
       <Footer />
     </>
   );
-};
-
-export default CosmoMapeamento;
+}

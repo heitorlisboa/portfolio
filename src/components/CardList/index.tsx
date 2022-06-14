@@ -1,16 +1,13 @@
-import type { FC, HTMLProps } from 'react';
+import type { HTMLProps } from 'react';
 
 import styles from './CardList.module.scss';
 
-const CardList: FC<HTMLProps<HTMLUListElement>> = ({
-  children,
-  ...otherProps
-}) => {
+type CardListProps = HTMLProps<HTMLUListElement>;
+
+export function CardList({ children, ...otherProps }: CardListProps) {
   return (
     <ul className={styles.list} {...otherProps}>
       {children}
     </ul>
   );
-};
-
-export default CardList;
+}

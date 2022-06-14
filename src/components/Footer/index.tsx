@@ -1,8 +1,8 @@
 import styles from './Footer.module.scss';
 
-import Container from '@/components/Container';
+import { Container } from '@/components/Container';
 
-function Footer() {
+export function Footer() {
   return (
     <footer className={styles.footer}>
       <Container>
@@ -32,5 +32,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;
