@@ -1,4 +1,4 @@
-@use "../partials/screen-breakpoints" as sb;
+@use '../partials/screen-breakpoints' as sb;
 
 :focus-visible {
   outline: 5px solid var(--blue);
@@ -8,7 +8,7 @@
 
 html,
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--gray-4);
 }
@@ -48,7 +48,7 @@ h4,
 h5,
 h6 {
   color: black;
-  font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.3;
 
   margin-block: 1em;
