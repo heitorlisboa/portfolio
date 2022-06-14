@@ -1,13 +1,12 @@
 import Head from 'next/head';
-import type { NextPage } from 'next';
 
 import styles from '@/styles/pages/Works.module.scss';
 
-import Container from '@/components/Container';
-import CardList from '@/components/CardList';
-import Footer from '@/components/Footer';
+import { Container } from '@/components/Container';
+import { CardList } from '@/components/CardList';
+import { Footer } from '@/components/Footer';
 
-const Aluracord: NextPage = () => {
+export default function AluracordPage() {
   return (
     <>
       <Head>
@@ -79,6 +78,4 @@ const Aluracord: NextPage = () => {
       <Footer />
     </>
   );
-};
-
-export default Aluracord;
+}

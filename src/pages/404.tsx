@@ -1,7 +1,3 @@
-import type { NextPage } from 'next';
-
-const Error404: NextPage = () => {
+export default function Error404Page() {
   return <div></div>;
-};
-
-export default Error404;
+}
