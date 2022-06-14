@@ -1,6 +1,6 @@
 import styles from './Footer.module.scss';
 
-import Container from '../Container';
+import Container from '@/components/Container';
 
 function Footer() {
   return (

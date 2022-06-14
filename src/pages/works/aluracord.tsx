@@ -1,10 +1,11 @@
-import type { NextPage } from 'next';
-import styles from '../../styles/pages/Works.module.scss';
-
 import Head from 'next/head';
-import Container from '../../components/Container';
-import CardList from '../../components/CardList';
-import Footer from '../../components/Footer';
+import type { NextPage } from 'next';
+
+import styles from '@/styles/pages/Works.module.scss';
+
+import Container from '@/components/Container';
+import CardList from '@/components/CardList';
+import Footer from '@/components/Footer';
 
 const Aluracord: NextPage = () => {
   return (
