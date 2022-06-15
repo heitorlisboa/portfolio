@@ -28,7 +28,7 @@ export default function HomePage() {
                 rel="noreferrer"
               >
                 <Image
-                  src="/svg/github-icon.svg"
+                  src="/icons/github-icon.svg"
                   alt="GitHub"
                   width={50}
                   height={50}
@@ -43,7 +43,7 @@ export default function HomePage() {
                 rel="noreferrer"
               >
                 <Image
-                  src="/svg/linkedin-icon.svg"
+                  src="/icons/linkedin-icon.svg"
                   alt="LinkedIn"
                   width={50}
                   height={50}
