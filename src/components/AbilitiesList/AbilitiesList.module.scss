@@ -24,12 +24,6 @@
   display: flex;
   gap: var(--size-3);
   flex-direction: column;
-
-  & > li {
-    display: flex;
-    gap: var(--size-2);
-    align-items: center;
-  }
 }
 
 @media (max-width: 35rem) {

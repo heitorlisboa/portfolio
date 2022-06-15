@@ -1,13 +1,15 @@
 import Image from 'next/image';
 import type { PropsWithChildren } from 'react';
 
-type AbilityProps = PropsWithChildren<{
+import styles from './Tech.module.scss';
+
+type TechProps = PropsWithChildren<{
   iconName: string;
 }>;
 
-export function Ability({ children, iconName }: AbilityProps) {
+export function Tech({ children, iconName }: TechProps) {
   return (
-    <li>
+    <li className={styles.tech}>
       <Image
         src={`/icons/techs/${iconName}-icon.svg`}
         alt=""

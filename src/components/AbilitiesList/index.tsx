@@ -1,6 +1,6 @@
 import styles from './AbilitiesList.module.scss';
 
-import { Ability } from './Ability';
+import { Tech } from '../Tech';
 
 type AbilitiesListProps = {
   'aria-labelledby': string;
@@ -17,9 +17,9 @@ export function AbilitiesList({
           aria-labelledby="general-abilities"
           className={styles.abilitiesList}
         >
-          <Ability iconName="js">JavaScript</Ability>
-          <Ability iconName="ts">TypeScript</Ability>
-          <Ability iconName="jest">Jest</Ability>
+          <Tech iconName="js">JavaScript</Tech>
+          <Tech iconName="ts">TypeScript</Tech>
+          <Tech iconName="jest">Jest</Tech>
         </ul>
       </li>
       <li>
@@ -28,11 +28,11 @@ export function AbilitiesList({
           aria-labelledby="front-end-abilities"
           className={styles.abilitiesList}
         >
-          <Ability iconName="html">HTML</Ability>
-          <Ability iconName="css">CSS</Ability>
-          <Ability iconName="sass">Sass</Ability>
-          <Ability iconName="react">React</Ability>
-          <Ability iconName="nextjs">Next.js</Ability>
+          <Tech iconName="html">HTML</Tech>
+          <Tech iconName="css">CSS</Tech>
+          <Tech iconName="sass">Sass</Tech>
+          <Tech iconName="react">React</Tech>
+          <Tech iconName="nextjs">Next.js</Tech>
         </ul>
       </li>
       <li>
@@ -41,15 +41,15 @@ export function AbilitiesList({
           aria-labelledby="back-end-abilities"
           className={styles.abilitiesList}
         >
-          <Ability iconName="nodejs">Node.js</Ability>
-          <Ability iconName="express">Express</Ability>
+          <Tech iconName="nodejs">Node.js</Tech>
+          <Tech iconName="express">Express</Tech>
         </ul>
       </li>
       <li>
         <h3 id="devops-abilities">DevOps</h3>
         <ul aria-labelledby="devops-abilities" className={styles.abilitiesList}>
-          <Ability iconName="docker">Docker</Ability>
-          <Ability iconName="kubernetes">Kubernetes</Ability>
+          <Tech iconName="docker">Docker</Tech>
+          <Tech iconName="kubernetes">Kubernetes</Tech>
         </ul>
       </li>
     </ul>
