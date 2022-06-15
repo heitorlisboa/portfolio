@@ -76,7 +76,7 @@ export default function HomePage() {
           <section>
             <h2>Sobre mim</h2>
             <p>
-              Opa, e aí? Meu nome é Heitor. Sou um introvertido apaixonado por
+              Opa, e aí? Meu nome é Heitor. Sou um jovem apaixonado por
               tecnologia e que adora construir coisas através do código.
             </p>
             <p>
@@ -99,12 +99,12 @@ export default function HomePage() {
               então que, aos meus 17 anos, eu tomei uma decisão: mergulhar de
               ponta no universo da tecnologia. A partir daí eu não parei mais,
               voltei a estudar Python, estudei Django, HTML, CSS, Javascript,
-              Sass etc.
+              React etc.
             </p>
             <p>
-              E hoje aqui estou, focando meus estudos em React, Next.js e
-              acessibilidade na web, recém entrando na faculdade de Engenharia
-              de Software, e sempre mantendo uma aplicação em desenvolvimento!
+              E hoje aqui estou, focando meus estudos em back-end com Node.js e
+              em front-end com React. Além disso, estou sempre mantendo uma
+              aplicação em desenvolvimento!
             </p>
           </section>
 
@@ -135,9 +135,9 @@ export default function HomePage() {
             </p>
             <a
               className={`${styles.emailLink} text-anchor`}
-              href="mailto:heitor01101000@gmail.com"
+              href="mailto:heitorcareer@gmail.com"
             >
-              heitor01101000@gmail.com
+              heitorcareer@gmail.com
             </a>
           </section>
         </Container>
