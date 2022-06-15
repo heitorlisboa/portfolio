@@ -1,0 +1,16 @@
+.container {
+  text-align: center;
+
+  display: grid;
+  min-height: 100vh;
+  justify-items: center;
+  align-content: center;
+
+  & * {
+    margin: 0;
+  }
+}
+
+.homeLink {
+  margin-top: 1rem;
+}
