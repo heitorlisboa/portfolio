@@ -79,46 +79,10 @@
 }
 
 .projectList {
-  display: flex;
+  display: grid;
   gap: var(--size-6);
-  flex-flow: row wrap;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   justify-content: space-between;
-}
-
-.project {
-  flex: 1 1 20rem;
-
-  transition: transform 1s ease;
-
-  img {
-    opacity: 0.75;
-    transition: opacity 1s ease;
-  }
-
-  &:hover {
-    transform: scale(105%);
-
-    img {
-      opacity: 1;
-    }
-  }
-}
-
-.projectLink {
-  position: relative;
-
-  &::before {
-    content: '';
-    background-image: url(/icons/forward-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center right;
-
-    position: absolute;
-    top: 0;
-    bottom: -0.2em;
-    left: 100%;
-    right: -1.5em;
-  }
 }
 
 .emailLink {
@@ -133,7 +97,7 @@
 
     position: absolute;
     top: 0;
-    bottom: -0.2em;
+    bottom: 0;
     left: calc(var(--icon-position) * -1);
     right: 100%;
   }

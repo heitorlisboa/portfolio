@@ -23,7 +23,7 @@ footer {
   }
 }
 
-section:not([class]) {
+:where(section:not([class])) {
   &:not(:first-of-type) {
     margin-block-start: var(--size-6);
   }
@@ -32,7 +32,7 @@ section:not([class]) {
   }
 }
 
-article:not([class]) {
+:where(article:not([class])) {
   &:not(:first-of-type) {
     margin-block-start: var(--size-5);
   }
@@ -41,12 +41,7 @@ article:not([class]) {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+:where(h1, h2, h3, h4, h5, h6) {
   color: black;
   font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.3;
@@ -54,7 +49,7 @@ h6 {
   margin-block: 1em;
 }
 
-h1 {
+:where(h1) {
   font-size: clamp(2rem, 3.5vw + 1rem, 3rem);
 }
 
@@ -63,28 +58,27 @@ figcaption {
   max-width: 75ch;
 }
 
-p {
-  &:not([class]) {
-    &:not(:first-of-type) {
-      margin-block-start: var(--size-5);
-    }
-    &:not(:last-child) {
-      margin-block-end: var(--size-5);
-    }
+:where(p:not([class])) {
+  &:not(:first-of-type) {
+    margin-block-start: var(--size-5);
+  }
 
-    &:where(:first-of-type:last-of-type) {
-      margin-block: var(--size-3);
-    }
+  &:not(:last-child) {
+    margin-block-end: var(--size-5);
+  }
+
+  &:where(:first-of-type:last-of-type) {
+    margin-block: var(--size-3);
   }
 }
 
-figure {
+:where(figure) {
   display: grid;
   gap: var(--size-2);
   grid-auto-flow: row;
 }
 
-figcaption {
+:where(figcaption) {
   font-style: italic;
   text-align: center;
 }

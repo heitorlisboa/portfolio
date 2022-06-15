@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import styles from '@/styles/pages/Home.module.scss';
 
 import { Container } from '@/components/Container';
 import { AbilitiesList } from '@/components/AbilitiesList';
+import { Project } from '@/components/Project';
 import { Footer } from '@/components/Footer';
 
 export default function HomePage() {
@@ -107,62 +107,25 @@ export default function HomePage() {
               de Software, e sempre mantendo uma aplicação em desenvolvimento!
             </p>
           </section>
+
           <section>
             <h2 id="abilities-title">Habilidades</h2>
             <AbilitiesList aria-labelledby="abilities-title" />
           </section>
+
           <section>
             <h2 id="projects-title">Meus projetos</h2>
             <ul className={styles.projectList} aria-labelledby="projects-title">
-              <article className={styles.project} role="listitem">
-                <Link href="/works/cosmo-mapeamento">
-                  <a className="image-anchor">
-                    <Image
-                      src="/img/cosmo-mapeamento.webp"
-                      alt="Print do website Cosmo Mapeamento"
-                      width={16}
-                      height={9}
-                      layout="responsive"
-                    />
-                  </a>
-                </Link>
-                <h3>Cosmo Mapeamento</h3>
-                <p>
-                  Reconstrução responsíva e acessível do website Cosmo
-                  Mapeamento
-                </p>
-                <Link href="/works/cosmo-mapeamento">
-                  <a className={`${styles.projectLink} text-anchor`}>
-                    Detalhes do projeto
-                  </a>
-                </Link>
-              </article>
-              <article className={styles.project} role="listitem">
-                <Link href="/works/aluracord">
-                  <a className="image-anchor">
-                    <Image
-                      src="/img/aluracord.webp"
-                      alt="Print do website Aluracord"
-                      width={16}
-                      height={9}
-                      layout="responsive"
-                    />
-                  </a>
-                </Link>
-                <h3>Aluracord</h3>
-                <p>
-                  Chat em tempo real inspirado no Discord feito durante a
-                  Imersão React 2022 da Alura{' '}
-                  <strong>(projeto original)</strong>
-                </p>
-                <Link href="/works/aluracord">
-                  <a className={`${styles.projectLink} text-anchor`}>
-                    Detalhes do projeto
-                  </a>
-                </Link>
-              </article>
+              <Project title="Cosmo Mapeamento" pathName="cosmo-mapeamento">
+                Reconstrução responsíva e acessível do website Cosmo Mapeamento
+              </Project>
+              <Project title="Aluracord" pathName="aluracord">
+                Chat em tempo real inspirado no Discord feito durante a Imersão
+                React 2022 da Alura <strong>(projeto original)</strong>
+              </Project>
             </ul>
           </section>
+
           <section>
             <h2>Contato</h2>
             <p>
@@ -179,6 +142,7 @@ export default function HomePage() {
           </section>
         </Container>
       </main>
+
       <Footer />
     </>
   );
