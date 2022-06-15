@@ -79,9 +79,10 @@
 }
 
 .projectList {
+  --min-project-size: 20rem;
   display: grid;
   gap: var(--size-6);
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--min-project-size), 1fr));
   justify-content: space-between;
 }
 
@@ -100,5 +101,11 @@
     bottom: 0;
     left: calc(var(--icon-position) * -1);
     right: 100%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .projectList {
+    --min-project-size: 15rem;
   }
 }
