@@ -38,7 +38,7 @@ export default function HomePage() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/heitor-lisboa-579b72230/"
+                href="https://www.linkedin.com/in/heitor-lisboa/"
                 target="_blank"
                 rel="noreferrer"
               >

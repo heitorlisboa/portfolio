@@ -20,7 +20,7 @@ export function Footer() {
           <li>
             <a
               className="text-anchor"
-              href="https://www.linkedin.com/in/heitor-lisboa-579b72230/"
+              href="https://www.linkedin.com/in/heitor-lisboa/"
               target="_blank"
               rel="noreferrer"
             >
