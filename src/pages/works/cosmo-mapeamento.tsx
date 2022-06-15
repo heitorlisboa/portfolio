@@ -3,7 +3,8 @@ import Head from 'next/head';
 import styles from '@/styles/pages/Works.module.scss';
 
 import { Container } from '@/components/Container';
-import { CardList } from '@/components/CardList';
+import { TechList } from '@/components/TechList';
+import { Tech } from '@/components/Tech';
 import { Footer } from '@/components/Footer';
 
 export default function CosmoMapeamentoPage() {
@@ -23,17 +24,6 @@ export default function CosmoMapeamentoPage() {
             inicialmente utilizando apenas React, mas depois migrado para o
             framework Next.js
           </p>
-          {/* <p>
-            Design original por{" "}
-            <a
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-              className="text-anchor"
-            >
-              NOME DO DESIGNER
-            </a>
-          </p> */}
           <ul className={styles.links} aria-label="Links do projeto">
             <li>
               <a
@@ -67,11 +57,11 @@ export default function CosmoMapeamentoPage() {
 
           <section>
             <h2 id="technologies">Tecnologias utilizadas</h2>
-            <CardList aria-labelledby="technologies">
-              <li>React &amp; Next.js</li>
-              <li>Typescript</li>
-              <li>Sass &amp; CSS Modules</li>
-            </CardList>
+            <TechList aria-labelledby="technologies">
+              <Tech iconName="nextjs">React &amp; Next.js</Tech>
+              <Tech iconName="ts">Typescript</Tech>
+              <Tech iconName="sass">Sass &amp; CSS Modules</Tech>
+            </TechList>
           </section>
 
           <section>

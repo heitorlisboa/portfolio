@@ -3,7 +3,8 @@ import Head from 'next/head';
 import styles from '@/styles/pages/Works.module.scss';
 
 import { Container } from '@/components/Container';
-import { CardList } from '@/components/CardList';
+import { TechList } from '@/components/TechList';
+import { Tech } from '@/components/Tech';
 import { Footer } from '@/components/Footer';
 
 export default function AluracordPage() {
@@ -65,12 +66,12 @@ export default function AluracordPage() {
           </section>
           <section>
             <h2 id="technologies">Tecnologias utilizadas</h2>
-            <CardList aria-labelledby="technologies">
-              <li>Next.js</li>
-              <li>Typescript</li>
-              <li>Sass</li>
-              <li>Supabase</li>
-            </CardList>
+            <TechList aria-labelledby="technologies">
+              <Tech iconName="nextjs">Next.js</Tech>
+              <Tech iconName="ts">Typescript</Tech>
+              <Tech iconName="sass">Sass</Tech>
+              <Tech iconName="supabase">Supabase</Tech>
+            </TechList>
           </section>
         </Container>
       </main>
