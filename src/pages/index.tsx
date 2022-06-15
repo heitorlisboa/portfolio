@@ -5,7 +5,7 @@ import Link from 'next/link';
 import styles from '@/styles/pages/Home.module.scss';
 
 import { Container } from '@/components/Container';
-import { CardList } from '@/components/CardList';
+import { AbilitiesList } from '@/components/AbilitiesList';
 import { Footer } from '@/components/Footer';
 
 export default function HomePage() {
@@ -109,15 +109,7 @@ export default function HomePage() {
           </section>
           <section>
             <h2 id="abilities-title">Habilidades</h2>
-            <CardList aria-labelledby="abilities-title">
-              <li>HTML &amp; CSS</li>
-              <li>Javascript ES6</li>
-              <li>Sass</li>
-              <li>Typescript</li>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Python</li>
-            </CardList>
+            <AbilitiesList aria-labelledby="abilities-title" />
           </section>
           <section>
             <h2 id="projects-title">Meus projetos</h2>
