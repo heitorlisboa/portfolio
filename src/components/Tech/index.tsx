@@ -13,8 +13,8 @@ export function Tech({ children, iconName }: TechProps) {
       <Image
         src={`/icons/techs/${iconName}-icon.svg`}
         alt=""
-        width={25}
-        height={25}
+        width={24}
+        height={24}
         layout="fixed"
       />
       <span>{children}</span>

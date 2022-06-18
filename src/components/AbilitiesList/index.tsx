@@ -43,6 +43,7 @@ export function AbilitiesList({
         >
           <Tech iconName="nodejs">Node.js</Tech>
           <Tech iconName="express">Express</Tech>
+          <Tech iconName="postgres">PostgreSQL (e PL/pgSQL)</Tech>
         </ul>
       </li>
       <li>

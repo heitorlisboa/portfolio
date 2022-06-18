@@ -1,5 +1,6 @@
 .tech {
-  display: flex;
+  display: grid;
   gap: var(--size-2);
   align-items: center;
+  grid-template-columns: 1.5rem 1fr;
 }
